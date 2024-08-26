@@ -3,7 +3,7 @@ import { OrbitControls } from "jsm/controls/OrbitControls.js";
 import getStarfield from "./src/getStarfield.js";
 
 const scene = new THREE.Scene();
-const camera = new THREE.PerspectiveCamera(45, innerWidth / innerHeight, 0.1, 1000);
+const camera = new THREE.PerspectiveCamera(80, innerWidth / innerHeight, 0.3, 1000);
 camera.position.set(0, 0, 3.5);
 const renderer = new THREE.WebGLRenderer({ antialias: true });
 renderer.setSize(innerWidth, innerHeight);

@@ -26,6 +26,8 @@ const geo = new THREE.IcosahedronGeometry(1, 10);
 const mat = new THREE.MeshBasicMaterial({ 
   color: 0x202020,
   wireframe: true,
+  transparent: true,
+  opacity: 0.1,
  });
 const cube = new THREE.Mesh(geo, mat);
 globeGroup.add(cube);

@@ -3,7 +3,7 @@ import { OrbitControls } from "jsm/controls/OrbitControls.js";
 import getStarfield from "./src/getStarfield.js";
 
 const scene = new THREE.Scene();
-const camera = new THREE.PerspectiveCamera(80, innerWidth / innerHeight, 0.3, 1000);
+const camera = new THREE.PerspectiveCamera(20, innerWidth / innerHeight, 0.3, 2000);
 camera.position.set(0, 0, 3.5);
 const renderer = new THREE.WebGLRenderer({ antialias: true });
 renderer.setSize(innerWidth, innerHeight);
@@ -27,7 +27,7 @@ const mat = new THREE.MeshBasicMaterial({
   color: 0x202020,
   wireframe: true,
   transparent: true,
-  opacity: 0.1,
+  opacity: 0.3,
  });
 const cube = new THREE.Mesh(geo, mat);
 globeGroup.add(cube);

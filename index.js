@@ -15,7 +15,7 @@ orbitCtrl.enableDamping = true;
 
 const textureLoader = new THREE.TextureLoader();
 const starSprite = textureLoader.load("./src/circle.png");
-const colorMap = textureLoader.load("./src/04_rainbow1k.jpg");
+const colorMap = textureLoader.load("./src/00_earthmap1k.jpg");
 const elevMap = textureLoader.load("./src/01_earthbump1k.jpg");
 const alphaMap = textureLoader.load("./src/02_earthspec1k.jpg");
 
